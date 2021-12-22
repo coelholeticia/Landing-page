@@ -12,3 +12,7 @@
  media query  para responsividade em telas menores. 
  
  
+ <img src="ex-pagina.png">
+  
+ 
+ 
