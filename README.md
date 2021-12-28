@@ -11,6 +11,8 @@
  
  media query  para responsividade em telas menores. 
  
+ menu Lateral. 
+ 
  
  <img src="ex-pagina.png">
   
