@@ -15,25 +15,29 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+    justify-content: space-around;
+    padding: 10px;
+    margin-left: 30%;
     
 }
 
 .Img__logo{
     width: 50px;
+    justify-content: flex-end;
+    margin-left: 20%;
 }
 
 .lista__menu__principal{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 70px;
+    gap: 40px;
+    
 }
 
 .itens__menu__principal{
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     
 }
 
@@ -42,9 +46,52 @@ body{
 }
 
 .Menu__navegaçao{
-    width: 10px;
+    width: 14px;
 
 }
+
+input[type="checkbox"]{
+    display:none;
+}
+
+.menu__lateral{
+    background: rgb(49, 48, 48);
+    width: 350px;  
+    height: 100%;
+    left: -350px;
+    position: absolute; 
+    transition: all 0.5s;   
+}
+
+input[type="checkbox"]:checked ~ .menu__lateral{
+    transform: translateX(350px);
+}
+
+.lista__menu__lateral{
+    position:absolute;
+    top: 30px;
+    width: 100%;
+}
+
+.itens__menu__lateral a{
+    color: #FFFF;
+    display: block;
+    padding: 20px 5px;
+}
+.itens__menu__lateral a:hover{
+    background-color:#FFF23DD4;
+    font-size: 20px;
+}
+
+label{
+    position:absolute;
+    padding: 15px;
+    z-index: 1;
+
+}
+
+
+
 
 .conteudo__principal{
     display: flex;
@@ -56,16 +103,17 @@ body{
 }
 
 .conteudo__principal img{
-    width: 50%;
+    width: 30%;
 }
 
 button{
     background-color: #FFF23DD4;
     margin: 40px 0;
-    padding: 10px 20px;
+    padding: 10px 80px;
     border-radius: 30px;
     color: #FFFF;
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     border: none;
     
 }
@@ -107,7 +155,7 @@ button{
 @media screen and (max-width:700px) {
 
     .Img__logo{
-        width: 40px;
+        width: 50px;
         margin-right: 10px;
     }
     .Menu__navegaçao{
@@ -131,7 +179,7 @@ button{
 @media screen and (min-width:340px) {
 
     .Img__logo{
-        width: 40px;
+        width: 50px;
         margin-right: 10px;
 
     }
